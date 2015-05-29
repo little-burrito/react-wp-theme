@@ -1,3 +1,10 @@
+
+This is a "fork", or rather a modified copy, of
+track, specialized for ReAct! - Actions moving.
+
+The source code is available at
+https://github.com/little-burrito/react-wp-theme
+
 -------------------------------------------------------
     Thank you for downloading Tracks!
 -------------------------------------------------------
