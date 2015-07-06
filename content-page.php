@@ -19,9 +19,17 @@
         ct_tracks_featured_image();
     }
     ?>
-	<div class='entry-header'>
-            <h1 class='entry-title'><?php the_title(); ?></h1>
-    </div>
+	<?php if ( get_field( 'display_headline' ) == true ) { ?>
+		<div class='entry-header'>
+				<h1 class='entry-title'><?php
+				if ( get_field( 'custom_headline' ) == '' ) {
+					the_title();
+				} else {
+					the_field( 'custom_headline' );
+				}
+				?></h1>
+		</div>
+	<?php } ?>
     <div class="entry-container">
         <div class='entry-content'>
             <article>

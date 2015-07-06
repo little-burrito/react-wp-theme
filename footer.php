@@ -1,9 +1,6 @@
 </div> <!-- .main -->
 
 <footer id="site-footer" class="site-footer" role="contentinfo">
-    <h3>
-        <a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('title'); ?></a>
-    </h3>
     <?php if(get_bloginfo('description') && ( get_theme_mod('tagline_display_setting') == 'header-footer' ) || ( get_theme_mod('tagline_display_setting') == 'footer' )){ ?>
         <p class="site-description"><?php bloginfo('description'); ?></p>
     <?php } ?>
@@ -18,6 +15,33 @@
         }
     ?>
 	<?php get_template_part('sidebar','footer'); ?>
+
+	<div class="partners">
+		<h4>ReAct! is part of</h4>
+		<div class="images">
+			<!--<span class="partner left">-->
+				<a href="http://danskonsulentdis.se/"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/dis.png" alt="DIS - Dans i Stockholms stad och län" /></a>
+			<!--</span>
+			<span class="partner right">-->
+				<a href="http://www.subtopia.se/start-page/"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/subtopia.png" alt="Subtopia" /></a>
+
+				<span class="vcenter"><a href="https://mojlighetsministeriet.se/">M&ouml;jlighetsministeriet</a></span>
+			<!--</span>-->
+		</div>
+
+		<h4 class="marginated">Media</h4>
+		<p>
+			<a href="https://www.youtube.com/user/reactactions">YouTube</a><br />
+			<a href="https://www.facebook.com/reactactions">Facebook</a>
+		</p>
+
+		<h4 class="marginated">Contact us</h4>
+		<p>
+			<a href="mailto:info@reactactions.com">info@reactactions.com</a><br />
+			+46 738 794 025
+		</p>
+	</div>
+
     <div class="design-credit">
         <p>
             <?php

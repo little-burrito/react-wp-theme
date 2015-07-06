@@ -2,10 +2,10 @@
 
 /* Category header */
 if(is_category()){ ?>
-	<div class='archive-header'>
+	<?php /* <div class='archive-header'>
 	<p><?php _e('Category:', 'tracks'); ?></p>
 	<h2><?php single_cat_title(); ?></h2>
-	</div><?php
+	</div> */?><?php
 }
 /* Tag header */
 elseif(is_tag()){ ?>

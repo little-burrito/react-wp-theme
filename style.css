@@ -1,9 +1,9 @@
 /*
-Theme Name: Tracks
-Theme URI: https://www.competethemes.com/tracks/
-Author: Compete Themes
-Author URI: https://www.competethemes.com
-Description: A bold, beautiful, and responsive theme. Tracks is perfect for personal blogs, magazines, and photography websites. It includes a logo uploader, social media icons, search bar, comment display controls, premium layouts and features, and more.  See our fully-setup live demo here: https://www.competethemes.com/tracks-live-demo/
+Theme Name: ReAct
+Theme URI: https://github.com/little-burrito/react-wp-theme
+Author: ReAct! - Actions moving
+Author URI: https://reactactions.com
+Description: Built from the Tracks theme, originally built by Compete themes. https://www.competethemes.com/tracks/
 Version: 1.36.1
 Tags: black, gray, silver, white, dark, one-column, fluid-layout, responsive-layout, custom-menu, editor-style, featured-image-header, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
 Text Domain: tracks
@@ -111,6 +111,10 @@ a:visited, a:hover, a:active, a:focus {
 
 article a {
   text-decoration: underline;
+}
+
+article a:hover {
+	text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -426,7 +430,7 @@ a img {
 
 .site-title {
   letter-spacing: 0.06em;
-  opacity: 0.6;
+  opacity: 1.0;
   -webkit-transition: opacity 0.2s ease;
           transition: opacity 0.2s ease;
 }
@@ -442,11 +446,11 @@ a img {
   color: white;
 }
 .site-title img {
-  max-width: 5em;
-  max-height: 1.5em;
+  max-width: 8em;
+  max-height: 3em;
 }
 .site-title:hover, .site-title:active, .site-title:focus {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .toggle-navigation {
@@ -586,8 +590,8 @@ a img {
   }
 
   .site-title img {
-    max-width: 8em;
-    max-height: 3em;
+    max-width: 12em;
+    max-height: 5em;
   }
 
   .toggle-navigation {
@@ -1417,6 +1421,9 @@ li.pingback:first-child {
 .site-footer a {
   color: #8c8c8c;
 }
+.site-footer a:hover {
+  color: #ffffff;
+}
 .site-footer h3 {
   letter-spacing: 0.06em;
   opacity: 0.4;
@@ -1435,6 +1442,27 @@ li.pingback:first-child {
 }
 .site-footer .social-media-icons a {
   opacity: 0.4;
+}
+.site-footer .partners h4 {
+	margin-bottom: 0.15em;
+}
+.site-footer h4.marginated {
+	margin-top: 1em;
+}
+.site-footer .images img {
+	vertical-align: top;
+	margin: 0.5em 1em;
+}
+.site-footer .partner {
+	display: inline-block;
+	width: 9em;
+	text-align: center;
+}
+.site-footer .left {
+	text-align: left;
+}
+.site-footer .right {
+	text-align: right;
 }
 
 .sidebar-footer {

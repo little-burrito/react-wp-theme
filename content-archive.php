@@ -7,7 +7,7 @@
 	?>
 	<div class="excerpt-container">
 		<div class="excerpt-meta">
-			<?php get_template_part('content/post-meta'); ?>
+			<?php //get_template_part('content/post-meta'); ?>
 		</div>
 		<div class='excerpt-header'>
 			<h1 class='excerpt-title'>
@@ -16,7 +16,24 @@
 		</div>
 		<div class='excerpt-content'>
 			<article>
-				<?php ct_tracks_excerpt(); ?>
+			<p><a class='more-link' href="<?php the_permalink(); ?>"><?php
+$category = get_the_category(); 
+switch ( $category[ 0 ]->cat_name ) { 
+	case "Actions": {
+		echo "Read more";
+		break;
+	}
+	case "Members": {
+		echo "About me";
+		break;
+	}
+	default: {
+		echo "Read more";
+		break;
+	}
+}
+?><span class='screen-reader-text'><?php the_title(); ?></span></a></p>
+				<?php //ct_tracks_excerpt(); ?>
 			</article>
 		</div>
 	</div>
