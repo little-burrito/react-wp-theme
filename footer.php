@@ -20,19 +20,24 @@
 		<h4>ReAct! is part of</h4>
 		<div class="images">
 			<!--<span class="partner left">-->
-				<a href="http://danskonsulentdis.se/"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/dis.png" alt="DIS - Dans i Stockholms stad och län" /></a>
+				<a href="http://danskonsulentdis.se/" target="_blank"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/dis.png" alt="DIS - Dans i Stockholms stad och län" /></a>
 			<!--</span>
 			<span class="partner right">-->
-				<a href="http://www.subtopia.se/start-page/"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/subtopia.png" alt="Subtopia" /></a>
+				<a href="http://www.subtopia.se/start-page/" target="_blank"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/subtopia.png" alt="Subtopia" /></a>
 
-				<span class="vcenter"><a href="https://mojlighetsministeriet.se/">M&ouml;jlighetsministeriet</a></span>
+				<span class="vcenter"><a href="https://mojlighetsministeriet.se/" target="_blank">M&ouml;jlighetsministeriet</a></span>
 			<!--</span>-->
 		</div>
 
+		<h4 class="marginated">With support from</h4>
+		<p>
+			<a href="http://www.konstnarsnamnden.se/" target="_blank"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/supported_by_konstnarsnamnden.png" alt="Konstn&auml;rsn&auml;mnden" class="supported_by_konstnarsnamnden" /></a>
+		</p>
+
 		<h4 class="marginated">Media</h4>
 		<p>
-			<a href="https://www.youtube.com/user/reactactions">YouTube</a><br />
-			<a href="https://www.facebook.com/reactactions">Facebook</a>
+			<a href="https://www.youtube.com/user/reactactions" target="_blank">YouTube</a><br />
+			<a href="https://www.facebook.com/reactactions" target="_blank">Facebook</a>
 		</p>
 
 		<h4 class="marginated">Contact us</h4>
@@ -55,7 +60,7 @@
             /* Otherwise, output the default text */
             else {
                 $site_url = 'https://www.competethemes.com/tracks/';
-                $footer_text = sprintf( __( '<a target="_blank" href="%s">Tracks WordPress Theme</a> by Compete Themes.', 'tracks' ), esc_url( $site_url ) );
+                $footer_text = sprintf( __( '<a target="_blank" href="%s">Tracks WordPress Theme</a> by Compete Themes. <a href="https://github.com/little-burrito/react-wp-theme">This version</a> is modified by ReAct! - Actions moving.', 'tracks' ), esc_url( $site_url ) );
                 echo $footer_text;
             }
             ?>

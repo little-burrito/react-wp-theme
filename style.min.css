@@ -96,6 +96,32 @@ p {
   margin: 1.5em 0;
 }
 
+p.footnote {
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+div.friends {
+	float: left;
+	width: 50%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+@media screen and ( max-width: 800px ) {
+	div.friends {
+		float: none;
+		width: 100%;
+	}
+}
+
+img.supported_by_konstnarsnamnden {
+	border: 7px solid #ffffff;
+	border-top: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+	margin-top: 2px;
+}
+
 a {
   text-decoration: none;
   color: #222222;
@@ -271,6 +297,15 @@ th {
 .size-medium img,
 .size-thumbnail img {
   max-width: 100%;
+}
+
+@media screen and ( max-width: 479px ) {
+	article img.alignright, article img.alignleft {
+		text-align: center;
+		margin: 1.5em auto;
+		display: block;
+		float: none;
+	}
 }
 
 img {
