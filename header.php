@@ -7,6 +7,7 @@
 
     <?php wp_head(); ?>
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css' />
+	<link type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" rel="shortcut icon" />
 
 </head>
 
