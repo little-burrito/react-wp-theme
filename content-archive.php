@@ -24,7 +24,7 @@ switch ( $category[ 0 ]->cat_name ) {
 		break;
 	}
 	case "Members": {
-		echo "About me";
+		echo "Read more";
 		break;
 	}
 	default: {

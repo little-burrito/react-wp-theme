@@ -43,7 +43,7 @@
 		<h4 class="marginated">Contact us</h4>
 		<p>
 			<a href="mailto:info@reactactions.com">info@reactactions.com</a><br />
-			+46 738 794 025
+			<span style="font-family: sans-serif">+46 738 794 025</span>
 		</p>
 	</div>
 

@@ -13,7 +13,45 @@
             <article>
                 <?php the_content(); ?>
                 <?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Pages:','tracks'), 'after' => '</p>', ) ); ?>
-            </article>
+			</article>
+
+<div class="post-article-links">
+<?php
+global $post;
+$post_id = get_the_ID();
+$categories = get_the_category();
+$category = $categories[0];
+$cat_ID = $category->cat_ID;
+
+$posts = get_posts("numberposts=20&category=$cat_ID");
+
+echo "<h4>";
+switch ( $category->cat_name ) { 
+	case "Actions": {
+		echo "Other actions";
+		break;
+	}
+	case "Members": {
+		echo "Other members";
+		break;
+	}
+	default: {
+		echo "Other";
+		break;
+	}
+}
+echo "</h4>";
+?>
+
+<ul>
+<?php foreach($posts as $post) :?>
+<?php if ( $post_id != get_the_ID() ) { ?>
+<li /><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+<?php } ?>
+<?php endforeach; ?>
+</ul>
+</div>
+
         </div>
         <?php get_template_part('sidebar','after-post-content'); ?>
         <div class='entry-meta-bottom'>
