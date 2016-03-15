@@ -120,6 +120,7 @@ img.supported_by_konstnarsnamnden {
 	border-top: 2px solid #ffffff;
 	border-bottom: 2px solid #ffffff;
 	margin-top: 2px;
+  opacity: 0.8;
 }
 
 a {
