@@ -31,11 +31,11 @@
 		</div>
 
 		<h4 class="marginated">With past support from</h4>
-		<p>
+		<div class="images">
 			<a href="http://www.konstnarsnamnden.se/" target="_blank"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/supported_by_konstnarsnamnden.png" alt="Konstn&auml;rsn&auml;mnden" class="supported_by_konstnarsnamnden" /></a><br />
 			<a href="http://www.kulturbryggan.se" target="_blank"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/kulturbryggan.png" alt="Kulturbryggan" /></a><br />
 			<a href="http://www.innovativkultur.se/" target="_blank"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/innovativ-kultur-logo.png" alt="Innovativ Kultur" /></a>
-		</p>
+		</div>
 
 		<h4 class="marginated">Media</h4>
 		<p>
