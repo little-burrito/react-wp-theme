@@ -1,5 +1,6 @@
 </div> <!-- .main -->
 
+
 <footer id="site-footer" class="site-footer" role="contentinfo">
     <?php if(get_bloginfo('description') && ( get_theme_mod('tagline_display_setting') == 'header-footer' ) || ( get_theme_mod('tagline_display_setting') == 'footer' )){ ?>
         <p class="site-description"><?php bloginfo('description'); ?></p>
@@ -25,7 +26,7 @@
 			<span class="partner right">-->
 				<a href="http://www.subtopia.se/start-page/" target="_blank"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/subtopia.png" alt="Subtopia" /></a>
 
-				<span class="vcenter"><a href="https://mojlighetsministeriet.se/" target="_blank">M&ouml;jlighetsministeriet</a></span>
+				<span class="vcenter"><a href="http://mojlighetsministeriet.se/" target="_blank">M&ouml;jlighetsministeriet</a></span>
 			<!--</span>-->
 		</div>
 
@@ -44,6 +45,10 @@
 		<p>
 			<a href="mailto:info@reactactions.com">info@reactactions.com</a><br />
 			<span style="font-family: sans-serif">+46 738 794 025</span>
+		</p>
+
+		<p>
+			<a href="/cookie-policy/">Cookie Policy</a>
 		</p>
 	</div>
 
