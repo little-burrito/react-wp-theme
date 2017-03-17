@@ -1488,9 +1488,19 @@ li.pingback:first-child {
 .site-footer h4.marginated {
 	margin-top: 1em;
 }
-.site-footer .images img {
-	vertical-align: top;
-	margin: 0.5em 1em;
+.site-footer .images img, .site-footer .images svg, .site-footer .images image {
+	vertical-align: middle;
+	margin: 0.5em 2em;
+  max-width: 200px;
+}
+.site-footer .with-support-from {
+  max-width: 900px;
+  width: 88.88%;
+  margin: 9px auto 21px;
+}
+.site-footer .with-support-from img, .site-footer .with-support-from svg, .site-footer .with-support image {
+  width: 100%;
+  max-width: 225px;
 }
 .site-footer .partner {
 	display: inline-block;

@@ -31,9 +31,41 @@
 		</div>
 
 		<h4 class="marginated">With support from</h4>
-		<p>
-			<a href="http://www.konstnarsnamnden.se/" target="_blank"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/supported_by_konstnarsnamnden.png" alt="Konstn&auml;rsn&auml;mnden" class="supported_by_konstnarsnamnden" /></a>
-		</p>
+		<div class="images with-support-from">
+
+			<a href="http://www.konstnarsnamnden.se/" target="_blank"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/KON_logotype_stor_150dpi.jpg" alt="Konstn&auml;rsn&auml;mnden" class="supported_by_konstnarsnamnden" /></a>
+
+			<a href="http://kultur.sll.se/" target="_blank"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/sll_centr_vit.png" alt="Stockholms Läns Landsting" /></a>
+
+			<a href="http://www.konstnarsnamnden.se/default.aspx?id=18477" target="_blank"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/JPG_Kulturbryggan_150mm_300dpi.jpg" alt="Kulturbryggan" class="supported_by_konstnarsnamnden" /></a>
+
+      <a href="http://kulturstiftelsen.se/" target="_blank">
+        <svg width="225" height="112" alt="PostkodLotteriets Kulturstiftelse">
+          <image xlink:href="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/Kulturstiftelsen.svg" src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/Kulturstiftelsen.png" width="225" height="112" alt="PostkodLotteriets Kulturstiftelse" />
+        </svg>
+      </a>
+
+      <a href="http://www.kulturivast.se/" target="_blank">
+        <svg width="225" height="31">
+          <image xlink:href="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/Kultur i Vast.svg" src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/Kultur i Vast.png" width="225" height="31" />
+        </svg>
+      </a>
+
+			<a href="http://itak.fi/" target="_blank"><img src="<?php echo get_bloginfo( "template_url" ); ?>/assets/images/itak.png" alt="ITAK - Itä-Suomen Tanssin Aluekeskus" /></a>
+
+		</div>
+
+<!-- SVG
+ SVG
+ SVG
+ SVG
+ SVG
+ SVG
+
+<svg width="96" height="96">
+  <image xlink:href="svg.svg" src="svg.png" width="96" height="96" />
+</svg>
+ -->
 
 		<h4 class="marginated">Media</h4>
 		<p>
