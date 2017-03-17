@@ -1498,12 +1498,18 @@ li.pingback:first-child {
   width: 88.88%;
   margin: 9px auto 21px;
 }
+.with-support-from a {
+  padding: 15px 0;
+  display: inline-block;
+  margin: 0.5em 2em;
+}
 .site-footer .with-support-from img,
 .site-footer .with-support-from svg {
   width: 100%;
   max-width: 225px;
   opacity: 0.6;
   transition: all 0.2s ease;
+  margin: 0;
 }
 .with-support-from a:hover img,
 .with-support-from a:hover svg {
