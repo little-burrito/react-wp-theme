@@ -1498,9 +1498,16 @@ li.pingback:first-child {
   width: 88.88%;
   margin: 9px auto 21px;
 }
-.site-footer .with-support-from img, .site-footer .with-support-from svg, .site-footer .with-support image {
+.site-footer .with-support-from img,
+.site-footer .with-support-from svg {
   width: 100%;
   max-width: 225px;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+.with-support-from a:hover img,
+.with-support-from a:hover svg {
+  opacity: 1.0;
 }
 .site-footer .partner {
 	display: inline-block;
