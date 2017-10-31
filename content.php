@@ -39,7 +39,7 @@ switch ( $category->slug ) {
 		echo "Autres Actions";
 		break;
 	}
-	case "Members": {
+	case "members": {
 		echo "Other members";
 		break;
 	}
