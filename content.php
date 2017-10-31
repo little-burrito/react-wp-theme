@@ -26,9 +26,17 @@ $cat_ID = $category->cat_ID;
 $posts = get_posts("numberposts=20&category=$cat_ID");
 
 echo "<h4>";
-switch ( $category->cat_name ) { 
-	case "Actions": {
-		echo "Other actions";
+switch ( $category->slug ) { 
+	case "actions": {
+		echo "Other Actions";
+		break;
+	}
+	case "actions-sv": {
+		echo "Andra Aktioner";
+		break;
+	}
+	case "actions-fr": {
+		echo "Autres Actions";
 		break;
 	}
 	case "Members": {
