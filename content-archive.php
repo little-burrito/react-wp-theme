@@ -18,21 +18,18 @@
 			<article>
 			<p><a class='more-link' href="<?php the_permalink(); ?>">
 
-<pre style="text-transform: none"><? print_r( get_post() ); ?></pre>
-<pre style="text-transform: none"><? print_r( get_post()->post_type ); ?></pre>
-
 <?php
-$post_type = get_post()->post_type;
+$post_type = get_post_type();
 switch ( $post_type ) { 
 	case "actions": {
 		echo "Read more";
 		break;
 	}
-	case "actions-fr": {
+	case "actions_fr": {
 		echo "Voir plus";
 		break;
 	}
-	case "actions-sv": {
+	case "actions_sv": {
 		echo "L&auml;s mer";
 		break;
 	}

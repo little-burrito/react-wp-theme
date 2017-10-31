@@ -1,3 +1,9 @@
+<?php
+
+global $post;
+$post_type = get_post_type();
+
+?>
 <div <?php post_class(); ?>>
     <?php ct_tracks_featured_image(); ?>
 	<div class="entry-meta">
@@ -11,18 +17,32 @@
     <div class="entry-container">
         <div class="entry-content">
             <article>
+<?php
+// Add links to translated pages if relevant
+if ( substr( $post_type, 0, 7 ) === "actions" ) {
+	echo '<div class="language-select-container">';
+		if ( $post_type !== 'actions' ) {
+			echo '<a href="/actions/' . $post->post_name . '/">In English</a>';
+		}
+		if ( $post_type !== 'actions_fr' ) {
+			echo '<a href="/actions-fr/' . $post->post_name . '/">En fran&ccedil;ais</a>';
+		}
+		if ( $post_type !== 'actions_sv' ) {
+			echo '<a href="/actions-sv/' . $post->post_name . '/">P&aring; svenska</a>';
+		}
+	echo '</div>';
+}
+?>
                 <?php the_content(); ?>
                 <?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Pages:','tracks'), 'after' => '</p>', ) ); ?>
 			</article>
 
 <div class="post-article-links">
 <?php
-global $post;
 $post_id = get_the_ID();
 $categories = get_the_category();
 $category = $categories[0];
 $cat_ID = $category->cat_ID;
-$post_type = get_post_type();
 
 $posts = get_posts("numberposts=20&category=$cat_ID");
 
@@ -32,11 +52,11 @@ switch ( $post_type ) {
 		echo "Other Actions";
 		break;
 	}
-	case "actions-sv": {
+	case "actions_sv": {
 		echo "Andra Aktioner";
 		break;
 	}
-	case "actions-fr": {
+	case "actions_fr": {
 		echo "Autres Actions";
 		break;
 	}
