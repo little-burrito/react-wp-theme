@@ -22,11 +22,12 @@ $post_id = get_the_ID();
 $categories = get_the_category();
 $category = $categories[0];
 $cat_ID = $category->cat_ID;
+$post_type = get_post_type();
 
 $posts = get_posts("numberposts=20&category=$cat_ID");
 
 echo "<h4>";
-switch ( $category->slug ) { 
+switch ( $post_type ) { 
 	case "actions": {
 		echo "Other Actions";
 		break;
@@ -52,12 +53,23 @@ echo "</h4>";
 ?>
 
 <ul>
-<?php foreach($posts as $post) :?>
-<?php if ( $post_id != get_the_ID() ) { ?>
-<li /><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-<?php } ?>
-<?php endforeach; ?>
+<?php
+
+$query = new WP_Query( array(
+	'post_type' => get_post()->post_type,
+	'post_status' => 'publish',
+	'posts_per_page' => -1
+) );
+
+while ( $query->have_posts() ) {
+	$query->the_post();
+	if ( $post_id != get_the_ID() ) { 
+		echo '<li><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
+	}
+}
+?>
 </ul>
+
 </div>
 
         </div>

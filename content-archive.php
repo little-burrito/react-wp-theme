@@ -16,14 +16,27 @@
 		</div>
 		<div class='excerpt-content'>
 			<article>
-			<p><a class='more-link' href="<?php the_permalink(); ?>"><?php
-$category = get_the_category(); 
-switch ( $category[ 0 ]->cat_name ) { 
-	case "Actions": {
+			<p><a class='more-link' href="<?php the_permalink(); ?>">
+
+<pre style="text-transform: none"><? print_r( get_post() ); ?></pre>
+<pre style="text-transform: none"><? print_r( get_post()->post_type ); ?></pre>
+
+<?php
+$post_type = get_post()->post_type;
+switch ( $post_type ) { 
+	case "actions": {
 		echo "Read more";
 		break;
 	}
-	case "Members": {
+	case "actions-fr": {
+		echo "Voir plus";
+		break;
+	}
+	case "actions-sv": {
+		echo "L&auml;s mer";
+		break;
+	}
+	case "members": {
 		echo "Read more";
 		break;
 	}
