@@ -69,8 +69,10 @@
 
 		<h4 class="marginated">Media</h4>
 		<p>
+			<a href="https://www.facebook.com/reactactions" target="_blank">Facebook</a><br />
 			<a href="https://www.youtube.com/user/reactactions" target="_blank">YouTube</a><br />
-			<a href="https://www.facebook.com/reactactions" target="_blank">Facebook</a>
+			<a href="https://www.instagram.com/reactactions/" target="_blank">Instagram</a><br />
+			<a href="https://www.vimeo.com/reactactions" target="_blank">Vimeo</a>
 		</p>
 
 		<h4 class="marginated">Contact us</h4>
