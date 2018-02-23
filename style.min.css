@@ -2792,9 +2792,11 @@ li.pingback:first-child {
 	.language-select-container :nth-child(1) {
 		float: none;
 		margin-bottom: 7px;
+		border: none;
 	}
 
 	.language-select-container :nth-child(2) {
 		float: none;
+		border: none;
 	}
 }
